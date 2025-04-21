@@ -68,4 +68,4 @@ https://github.com/user-attachments/assets/a5d69487-02fc-47b3-9a19-70c1ce55b77d
 
 
 
-If you encounter any bugs or need additional help, please create an issue [here](https://github.com/FFProjects0/BasicallySpotify/issues) with the appropriate.
+If you encounter any bugs or need additional help, please create an issue [here](https://github.com/FFProjects0/BasicallySpotify/issues) with the appropriate tags.
