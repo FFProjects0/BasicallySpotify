@@ -15,7 +15,7 @@
 [license-shield]: https://img.shields.io/github/license/justin025/onthespot?style=flat&label=License&labelColor=001224&color=1DB954
 [license-url]: https://github.com/justin025/onthespot/blob/main/LICENSE
 
-An easy to use music player written in Python. BasicallySpotify has support for [OnTheSpot](https://github.com/justin025/onthespot/tree/v1.1.0)'s folder structure, lyrics and playlists! (in alpha). The app only includes a GUI frontend since no other versions exist. To get started [download the app here.](https://github.com/FFProjects0/BasicallySpotify/releases/tag/Release)<br>
+An easy to use music player written in Python. BasicallySpotify has support for [OnTheSpot](https://github.com/justin025/onthespot/tree/v1.1.0)'s folder structure, lyrics and playlists! (in alpha). The app only includes a GUI frontend since no other versions exist. To get started [download the app here.](https://github.com/FFProjects0/BasicallySpotify/releases/tag/Release)<br><br>
 ![image](https://github.com/user-attachments/assets/23415053-18b3-45c9-b5e5-ba6617268498)
 
 # Quick Links
