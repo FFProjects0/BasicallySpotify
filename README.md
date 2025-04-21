@@ -2,6 +2,12 @@
 Custom program that works closely to spotify but for local files; no ads and with lyric support!<br>
 ![image](https://github.com/user-attachments/assets/23415053-18b3-45c9-b5e5-ba6617268498)
 
+# Quick Links
+- [Features](https://github.com/FFProjects0/BasicallySpotify?tab=readme-ov-file#features)<br>
+- [How to Setup](https://github.com/FFProjects0/BasicallySpotify?tab=readme-ov-file#how-to-setup)<br>
+    - [OnTheSpot](https://github.com/FFProjects0/BasicallySpotify?tab=readme-ov-file#11-onthespot)<br>
+    - [Manually](https://github.com/FFProjects0/BasicallySpotify?tab=readme-ov-file#121-manually)<br>
+- [How to use](https://github.com/FFProjects0/BasicallySpotify?tab=readme-ov-file#how-to-use)<br>
 
 # Features
 - Lyric (.lrc) support for files with timing as well without timing (examples below)<br>
@@ -49,4 +55,4 @@ https://github.com/user-attachments/assets/a5d69487-02fc-47b3-9a19-70c1ce55b77d
 
 
 
-If you encounter any bugs, please create an issue [here](https://github.com/FFProjects0/BasicallySpotify/issues).
+If you encounter any bugs or need additional help, please create an issue [here](https://github.com/FFProjects0/BasicallySpotify/issues) with the appropriate.
