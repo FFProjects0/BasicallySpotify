@@ -3,13 +3,13 @@
 [![Stars Badge][stars-shield]][stars-url]
 [![Downloads Badge][downloads-shield]][downloads-url]
 <!-- Issues Badge -->
-[issues-shield]: https://img.shields.io/github/issues/justin025/onthespot?style=flat&label=Issues&labelColor=001224&color=1DB954
+[issues-shield]: https://img.shields.io/github/issues/FFProjects0/BasicallySpotify?style=flat&label=Issues&labelColor=001224&color=1DB954
 [issues-url]: https://github.com/FFProjects0/BasicallySpotify/issues
 <!-- Stars Badge -->
-[stars-shield]: https://img.shields.io/github/stars/justin025/onthespot?style=flat&label=Stars&labelColor=001224&color=1DB954
+[stars-shield]: https://img.shields.io/github/stars/FFProjects0/BasicallySpotify?style=flat&label=Stars&labelColor=001224&color=1DB954
 [stars-url]: https://github.com/FFProjects0/BasicallySpotify/stargazers
 <!-- Downloads Badge -->
-[downloads-shield]: https://img.shields.io/github/downloads/justin025/onthespot/total.svg?style=flat&label=Downloads&labelColor=001224&color=1DB954
+[downloads-shield]: https://img.shields.io/github/downloads/FFProjects0/BasicallySpotify/total.svg?style=flat&label=Downloads&labelColor=001224&color=1DB954
 [downloads-url]: https://github.com/FFProjects0/BasicallySpotify/releases/
 
 An easy to use music player written in Python. BasicallySpotify has support for [OnTheSpot](https://github.com/justin025/onthespot/tree/v1.1.0)'s folder structure, lyrics and playlists! (in alpha). The app only includes a GUI frontend since no other versions exist. To get started [download the app here.](https://github.com/FFProjects0/BasicallySpotify/releases/tag/Release)<br>
