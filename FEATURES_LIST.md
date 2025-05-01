@@ -31,7 +31,7 @@ IF YOU THINK I FORGOT ABOUT SOMETHING, LET ME KNOW IN [ISSUES](https://github.co
 | *Yo* | 7 |
 | *Eminem<br>VS<br>IBS* | 8 |
 
-### $${\color{lightgreen}Artist/Album Picker:}$$
+### $${\color{lightgreen}Artist/Album \space Picker:}$$
 | Features |
 | - |
 | $${\color{red}Drag \space albums \space to \space the \space play \space area \space to \space play \space them}$$[^2] |
