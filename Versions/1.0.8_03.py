@@ -763,13 +763,17 @@ class VinylPlayer(QtWidgets.QMainWindow):
     def play_next(self):
         print("[DEBUG] play_next clicked.")
         self.media_list_player.next()
-        self.pause_button.setIcon(QtGui.QIcon(resource_path("paws.png")))
-        self.pause_button.setToolTip("Pause")
+        if self.is_paused == True:
+            self.is_paused = not self.is_paused
+            self.pause_button.setIcon(QtGui.QIcon(resource_path("paws.png")))
+            self.pause_button.setToolTip("Pause")
     def play_previous(self):
         print("[DEBUG] play_previous clicked.")
         self.media_list_player.previous()
-        self.pause_button.setIcon(QtGui.QIcon(resource_path("paws.png")))
-        self.pause_button.setToolTip("Pause")
+        if self.is_paused == True:
+            self.is_paused = not self.is_paused
+            self.pause_button.setIcon(QtGui.QIcon(resource_path("paws.png")))
+            self.pause_button.setToolTip("Pause")
     def toggle_pause(self):
         print("[DEBUG] toggle_pause clicked.")
         self.media_list_player.pause()
