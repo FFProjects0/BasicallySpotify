@@ -590,7 +590,7 @@ class VinylPlayer(QtWidgets.QMainWindow):
         self.menuBar().addAction(toggleLyricsAction)
 
         # Shortcuts
-        self.searchShortcut = QtWidgets.QShortcut(QtGui.QKeySequence("Ctrl+F"))
+        self.searchShortcut = QtWidgets.QShortcut(QtGui.QKeySequence("Ctrl+F"), self)
         self.searchShortcut.activated.connect(self.open_search_dialog)
         self.searchShortcut = QtWidgets.QShortcut(QtGui.QKeySequence("X"), self)
         self.searchShortcut.activated.connect(self.toggle_pause)
