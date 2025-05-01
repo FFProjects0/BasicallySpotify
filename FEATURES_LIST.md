@@ -64,7 +64,7 @@ IF YOU THINK I FORGOT ABOUT SOMETHING, LET ME KNOW IN [ISSUES](https://github.co
 | Displays the currently playing album's songs |
 | Double click song to play |
 
-### $${\color{red}Known Bugs:}$$ (I'll fix them, eventually)
+### $${\color{red}Known \space Bugs:}$$ (I'll fix them, eventually)
 |||
 | - | - |
 | RIGHT CLICKING ANY OF THE SONGS FROM THE SONG LIST | Result: $${\color{red}Crash}$$ |
