@@ -20,26 +20,12 @@ An easy to use music player written in Python. BasicallySpotify has support for 
 > This program is in a very unfinished state and may contain bugs and a lack of features.
 
 # Quick Links
-- [Features](https://github.com/FFProjects0/BasicallySpotify?tab=readme-ov-file#features) / [Features.md](https://github.com/FFProjects0/BasicallySpotify/blob/main/FEATURES_LIST.md)<br>
+- [Features.md](https://github.com/FFProjects0/BasicallySpotify/blob/main/FEATURES_LIST.md)<br>
+
 - [How to Setup](https://github.com/FFProjects0/BasicallySpotify?tab=readme-ov-file#how-to-setup)<br>
     - [OnTheSpot](https://github.com/FFProjects0/BasicallySpotify?tab=readme-ov-file#11-onthespot)<br>
     - [Manually](https://github.com/FFProjects0/BasicallySpotify?tab=readme-ov-file#121-manually)<br>
 - [How to use](https://github.com/FFProjects0/BasicallySpotify?tab=readme-ov-file#how-to-use)<br>
-
-# Features
-- Lyric (.lrc) support for files with timing as well without timing (examples below)<br>
-Song + lyric combo<br>
-![image](https://github.com/user-attachments/assets/0ab912e4-4d88-4901-acbd-707286d61a45)<br>
-Timed:<br>
-![image](https://github.com/user-attachments/assets/629216e5-94ff-42e4-92fa-234c91b0eaaf)<br>
-Not Timed:<br>
-![image](https://github.com/user-attachments/assets/2d85b973-72db-4f79-9491-560b5e63807c)<br>
-- Repeat support (modes: no repeat, album repeat, one song repeat)
-- Actually playing songs, whoa!
-- Peak searching (search for album names or artist names)
-- Playlists, though really shitty, close it rather than use it.
-- and more!
-
 
 # How to setup
 ## #1.1 OnTheSpot
