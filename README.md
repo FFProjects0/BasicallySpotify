@@ -17,7 +17,7 @@ An easy to use music player written in Python. BasicallySpotify has support for 
 ![image](https://github.com/user-attachments/assets/23415053-18b3-45c9-b5e5-ba6617268498)
 
 # Quick Links
-- [Features](https://github.com/FFProjects0/BasicallySpotify?tab=readme-ov-file#features) / [Features.md](https://github.com/FFProjects0/BasicallySpotify/blob/main/FEATURES_LIST.md)]<br>
+- [Features](https://github.com/FFProjects0/BasicallySpotify?tab=readme-ov-file#features) / [Features.md](https://github.com/FFProjects0/BasicallySpotify/blob/main/FEATURES_LIST.md)<br>
 - [How to Setup](https://github.com/FFProjects0/BasicallySpotify?tab=readme-ov-file#how-to-setup)<br>
     - [OnTheSpot](https://github.com/FFProjects0/BasicallySpotify?tab=readme-ov-file#11-onthespot)<br>
     - [Manually](https://github.com/FFProjects0/BasicallySpotify?tab=readme-ov-file#121-manually)<br>
