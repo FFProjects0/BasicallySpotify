@@ -7,6 +7,6 @@
 - [ ] Settings/config tab
 - [x] Disc support
 - [x] Playlist/Settings/Songs/Albums/Artist searching
-> ![NOTE]
+> [!NOTE]
 
 > This was partially achieved by the album/artist searching on the left & the specific song menu, accessible by pressing `CTRL+F`.
