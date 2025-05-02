@@ -1,6 +1,6 @@
 # Here is a list of features i would like to add in the future:
 
-- [ ] PLAYLIST
+- [ ] PLAYLISTS
 - [ ] Podcast support
 - [ ] Multiple pages/tabs for different areas of the app
 - [ ] Multiple profiles/profile system
