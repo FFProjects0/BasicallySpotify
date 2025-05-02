@@ -65,6 +65,9 @@ I use metadata to find out information about the songs and it won't work otherwi
 
 # How to use
 Drag an album from an artist into the player area.<br>
+
+
+
 https://github.com/user-attachments/assets/a5d69487-02fc-47b3-9a19-70c1ce55b77d
 
 
