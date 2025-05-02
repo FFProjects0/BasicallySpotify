@@ -14,7 +14,7 @@
 [downloads-url]: https://github.com/FFProjects0/BasicallySpotify/releases/
 
 An easy to use music player written in Python. BasicallySpotify has support for [OnTheSpot](https://github.com/justin025/onthespot/tree/v1.1.0)'s folder structure, lyrics and playlists! The app only includes a GUI frontend since no other versions exist. To get started [download the app here.](https://github.com/FFProjects0/BasicallySpotify/releases)<br>
-![image](https://github.com/user-attachments/assets/23415053-18b3-45c9-b5e5-ba6617268498)
+<!--![image](https://github.com/user-attachments/assets/23415053-18b3-45c9-b5e5-ba6617268498)-->
 
 > [!WARNING]
 > This program is in a very unfinished state and may contain bugs and a lack of features.
