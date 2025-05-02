@@ -1,4 +1,5 @@
-# BasicallySpotify
+![Untitled25_20250502051553](https://github.com/user-attachments/assets/6fd49149-ee87-49f1-8c84-94393e65a85f)
+
 [![Issues Badge][issues-shield]][issues-url]
 [![Stars Badge][stars-shield]][stars-url]
 [![Downloads Badge][downloads-shield]][downloads-url]
