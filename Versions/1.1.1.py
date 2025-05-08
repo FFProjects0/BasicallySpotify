@@ -9,6 +9,7 @@ from mutagen.id3 import ID3, APIC
 from tinytag import TinyTag
 import html
 from functools import partial
+from pathlib import Path
 SUPPORTED_FORMATS = (
     '.3gp', '.aa', '.aac', '.aax', '.act', '.aiff', '.alac', '.amr', '.ape',
     '.au', '.awb', '.dss', '.dvf', '.flac', '.gs', '.iklax', '.ivs', '.m4a',
@@ -901,8 +902,20 @@ class VinylPlayer(QtWidgets.QMainWindow):
                     self.media_list.add_media(media)
                     flat_tracks.append(f)
                     # Display track title
-                    title = f"{str(full_path).split(". ")[0].split("\\")[3]}. {tag_info.title}" if tag_info.title else f"{str(full_path).split(". ")[0]}. {tag_info.title}"
-                    item = QtWidgets.QListWidgetItem(title)
+                    def make_title(full_path, tag_info):
+                        p = Path(full_path)
+                        base = p.stem                      # "01. Song Title"
+                        index, sep, original = base.partition(". ")
+
+                        # if the file actually had an index
+                        if sep:
+                            name_to_use = tag_info.title or original
+                            return f"{index}. {name_to_use}"
+                        else:
+                            # fallback if no “. ” in filename
+                            return tag_info.title or original
+
+                    item = QtWidgets.QListWidgetItem(make_title(full_path, tag_info))
                     self.trackList.addItem(item)
 
                     # Update current_tracks to the new flattened order
