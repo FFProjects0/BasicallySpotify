@@ -1,4 +1,4 @@
-# Features for the latest release, $${\color{orange}v1.0.8\\_02}$$
+# Features for the latest release, $${\color{orange}v1.1.1}$$
 IF YOU THINK I FORGOT ABOUT SOMETHING, LET ME KNOW IN [ISSUES](https://github.com/FFProjects0/BasicallySpotify/issues)!!
 
 ### $${\color{lightgreen}Shortcuts:}$$
@@ -11,6 +11,13 @@ IF YOU THINK I FORGOT ABOUT SOMETHING, LET ME KNOW IN [ISSUES](https://github.co
 | R | cycle repeat modes |
 | S | toggle shuffling |
 | CTRL+F | find specific song(s) |
+
+### $${\color{lightgreen}Settings:}$$
+| Setting | Event |
+| - | - |
+| Volume [0-100] | Controls volume output of the application |
+| Theme (not implemented yet) | (will) changes app theme |
+| Sleep Timer [minutes] | Waits a certain amount of time before pausing music |
 
 ### $${\color{lightgreen}Lyrics:}$$
 | Features |
@@ -68,7 +75,6 @@ IF YOU THINK I FORGOT ABOUT SOMETHING, LET ME KNOW IN [ISSUES](https://github.co
 |||
 | - | - |
 | RIGHT CLICKING ANY OF THE SONGS FROM THE SONG LIST | Result: $${\color{red}Crash}$$ |
-| Right Clicking `Lyrics` at the top bar | $${\color{green}Purely \space Visual}$$ |
 For other bugs, refer to [Issues](https://github.com/FFProjects0/BasicallySpotify/issues)
 
 [^1]: Synced lyrics are formatted differently than non-synced ones, refer to a [.lrc file](https://www.wikihow.com/Make-an-*.Lrc-File) guide to see how.<br> (make sure to include `[ar:Arist], [al:Album], [ti:Title], [au:Author], [by:Creator], [length:--:--], <EMPTY LINE>, <[--:--.---] Lyric>` in this order)
