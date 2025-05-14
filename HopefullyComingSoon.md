@@ -4,7 +4,7 @@
 - [ ] Podcast support
 - [ ] Multiple pages/tabs for different areas of the app
 - [ ] Multiple profiles/profile system
-- [ ] Settings/config tab
+- [x] Settings/config tab
 - [x] Disc support
 - [x] Playlist/Settings/Songs/Albums/Artist searching
 > [!NOTE]
