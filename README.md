@@ -21,7 +21,7 @@ An easy to use music player written in Python. BasicallySpotify has support for 
 > **The current program works good enough for everyday use, so it's not that big of a deal**
 
 > [!WARNING]
-> This program is in a very unfinished state and may contain bugs and lack features, please report and feature requests/bugs [here](https://github.com/FFProjects0/BasicallySpotify/issues).
+> This program is in a very unfinished state and may contain bugs and lack features, please report and feature **requests/bugs** [here](https://github.com/FFProjects0/BasicallySpotify/issues).
 
 # Quick Links
 - [Features.md](https://github.com/FFProjects0/BasicallySpotify/blob/main/FEATURES_LIST.md)<br><br>
