@@ -17,7 +17,7 @@ An easy to use music player written in Python. BasicallySpotify has support for 
 <!--![image](https://github.com/user-attachments/assets/23415053-18b3-45c9-b5e5-ba6617268498)-->
 
 > [!CAUTION]
-> It appears that i've lost the python file for the newest version (v1.1.1), because i'm dumb and don't know how to properly save stuff, so the next version(s) will come out from v1.1.0.
+> It appears that i've lost the python file for the newest version (v1.1.1), because i'm dumb and don't know how to properly save stuff, so the next version(s) will come out from v1.1.0.<br>
 > **The current program works good enough for everyday use, so it's not that big of a deal**
 
 > [!WARNING]
