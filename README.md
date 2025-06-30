@@ -18,6 +18,8 @@ An easy to use music player written in Python. BasicallySpotify has support for 
 
 > [!CAUTION]
 > It appears that i've lost the python file for the newest version (v1.1.1), because i'm dumb and don't know how to properly save stuff, so the next version(s) will come out from v1.1.0.
+> **The current program works good enough for everyday use, so it's not that big of a deal**
+
 > [!WARNING]
 > This program is in a very unfinished state and may contain bugs and lack features, please report and feature requests/bugs [here](https://github.com/FFProjects0/BasicallySpotify/issues).
 
