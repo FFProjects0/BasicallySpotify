@@ -1,5 +1,5 @@
 # this is the wrong file, actually, haha... 
-# tried by bests to rewrite it!!
+# tried by best to rewrite it!!
 
 import sys, os, datetime
 import re
