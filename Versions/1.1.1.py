@@ -1,4 +1,5 @@
 # this is the wrong file, actually, haha... 
+# thied by bests to rewrite it!!
 
 import sys, os, datetime
 import re
@@ -11,7 +12,9 @@ from mutagen.id3 import ID3, APIC
 from tinytag import TinyTag
 import html
 from functools import partial
-from pathlib import Path
+
+album_bg = None
+
 SUPPORTED_FORMATS = (
     '.3gp', '.aa', '.aac', '.aax', '.act', '.aiff', '.alac', '.amr', '.ape',
     '.au', '.awb', '.dss', '.dvf', '.flac', '.gs', '.iklax', '.ivs', '.m4a',
@@ -177,22 +180,23 @@ class LyricsWidget(QtWidgets.QTextBrowser):
 
         if index != self.current_index:
             self.current_index = index
-            try:
-                color = self.parent().current_text_color.name()
-            except AttributeError:
-                color = 'yellow'
+            #try:
+            contrast = album_bg
+            color = contrast
+            #except AttributeError:
+            #    color = 'yellow'
 
             html_content = ""
             for i, (ts, line) in enumerate(self.lyrics):
                 if i == index:
                     html_content += (
-                        f'<p color:{color};"><b>'
-                        f'<a href="{ts}">{line}</a>'
+                        f'<p><b>'
+                        f'<a style="color:{color};" href="{ts}">{line}</a>'
                         f'</b></p>'
                     )
                 else:
                     html_content += (
-                        f'<p><a href="{ts}">{line}</a></p>'
+                        f'<p><a style="color:{color};" href="{ts}">{line}</a></p>'
                     )
 
             self.setHtml(html_content)
@@ -773,6 +777,7 @@ class VinylPlayer(QtWidgets.QMainWindow):
             small = self.current_album_cover.scaled(1, 1, QtCore.Qt.IgnoreAspectRatio, QtCore.Qt.SmoothTransformation)
             avg_color = QtGui.QColor(small.toImage().pixel(0, 0))
             self.text_color = get_contrasting_color(avg_color)
+            album_bg = get_contrasting_color(avg_color).name()
             self.current_bg_color = avg_color
             self.current_text_color = self.text_color
 
@@ -828,6 +833,18 @@ class VinylPlayer(QtWidgets.QMainWindow):
 
         # Group tracks by disc based on 'Part of set' (disc) metadata
         self.track_item_rows = []
+        # Helper to build a clean title
+        def build_title(full_path, tag_info):
+            # strip extension, take basename
+            name = os.path.splitext(os.path.basename(full_path))[0]
+            m = re.match(r'(\d+)\.\s*(.*)', name)
+            if m:
+                track_num, fallback = m.groups()
+                display_title = tag_info.title or fallback
+                return f"{track_num}. {display_title}"
+            else:
+                # no leading "01. ", just show tag title or file name
+                return tag_info.title or name
         disc_groups = {}
         for f in sorted_files:
             full_path = os.path.join(album_path, f)
@@ -866,19 +883,9 @@ class VinylPlayer(QtWidgets.QMainWindow):
                     self.media_list.add_media(media)
                     flat_tracks.append(f)
                     # Display track title
-                    # yo bruh i need to fix this 😭
+                    # Helper to build a clean title
+                    title = build_title(full_path, tag_info)
                     #title = f"{str(full_path).split(". ")[0].split("\\")[3]}. {tag_info.title}" if tag_info.title else f"{str(full_path).split(". ")[0]}. {tag_info.title}"
-                    from pathlib import Path
-                    def make_title(full_path, tag_info):
-                        p = Path(full_path)
-                        base = p.stem
-                        index, sep, original = base.partition(". ")
-                        if sep:
-                            name_to_use = tag_info.title or original
-                            return f"{index}. {name_to_use}"
-                        else:
-                            return tag_info.title or original
-                    title = make_title(full_path, tag_info)
                     item = QtWidgets.QListWidgetItem(title)
                     self.trackList.addItem(item)
 
@@ -904,20 +911,8 @@ class VinylPlayer(QtWidgets.QMainWindow):
                     self.media_list.add_media(media)
                     flat_tracks.append(f)
                     # Display track title
-                    def make_title(full_path, tag_info):
-                        p = Path(full_path)
-                        base = p.stem                      # "01. Song Title"
-                        index, sep, original = base.partition(". ")
-
-                        # if the file actually had an index
-                        if sep:
-                            name_to_use = tag_info.title or original
-                            return f"{index}. {name_to_use}"
-                        else:
-                            # fallback if no “. ” in filename
-                            return tag_info.title or original
-
-                    item = QtWidgets.QListWidgetItem(make_title(full_path, tag_info))
+                    title = f"{str(full_path).split(". ")[0].split("\\")[3]}. {tag_info.title}" if tag_info.title else f"{str(full_path).split(". ")[0]}. {tag_info.title}"
+                    item = QtWidgets.QListWidgetItem(title)
                     self.trackList.addItem(item)
 
                     # Update current_tracks to the new flattened order
